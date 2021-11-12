@@ -1,0 +1,165 @@
+---
+telegram:
+  broadcast: true
+
+sessions:
+  binance:
+    exchange: binance
+    envVarPrefix: binance
+
+persistence:
+  json:
+    directory: var/data
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+
+exchangeStrategies:
+
+- on: binance
+  techsignal:
+    symbol: BTCUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+
+      - interval: 1m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 99
+        minVolume: 100
+
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 1000
+
+- on: binance
+  techsignal:
+    symbol: BNBUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 1m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 20_000
+
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 30_000
+
+- on: binance
+  techsignal:
+    symbol: ETHUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 1m
+        movingAverageType: EMA
+        movingAverageInterval: 30m
+        movingAverageWindow: 7
+        minVolume: 2_000
+
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 8_000
+
+- on: binance
+  techsignal:
+    symbol: DOTUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 1m
+        movingAverageType: EMA
+        movingAverageInterval: 30m
+        movingAverageWindow: 7
+        minVolume: 60_000
+
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 200_000
+
+- on: binance
+  techsignal:
+    symbol: AVAXUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 40_000
+        # 40k ~ 90k
+
+
+- on: binance
+  techsignal:
+    symbol: AXSUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 15_000
+
+- on: binance
+  techsignal:
+    symbol: FTMUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 1_000_000
+
+- on: binance
+  techsignal:
+    symbol: CELRUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 10_000_000
+
+- on: binance
+  techsignal:
+    symbol: COMPUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 3_000
+
+- on: binance
+  techsignal:
+    symbol: SANDUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+      - interval: 5m
+        movingAverageType: EMA
+        movingAverageInterval: 1h
+        movingAverageWindow: 7
+        minVolume: 2_000_000
