@@ -23,18 +23,17 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
+    - interval: 1m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 99
+      minVolume: 100
 
-      - interval: 1m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 99
-        minVolume: 100
-
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 1000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 1000
 
 - on: binance
   techsignal:
@@ -42,17 +41,16 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 1m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 20_000
-
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 30_000
+    - interval: 1m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 20_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 30_000
 
 - on: binance
   techsignal:
@@ -60,17 +58,17 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 1m
-        movingAverageType: EMA
-        movingAverageInterval: 30m
-        movingAverageWindow: 7
-        minVolume: 2_000
+    - interval: 1m
+      movingAverageType: EMA
+      movingAverageInterval: 30m
+      movingAverageWindow: 7
+      minVolume: 2_000
 
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 8_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 8_000
 
 - on: binance
   techsignal:
@@ -78,17 +76,17 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 1m
-        movingAverageType: EMA
-        movingAverageInterval: 30m
-        movingAverageWindow: 7
-        minVolume: 60_000
+    - interval: 1m
+      movingAverageType: EMA
+      movingAverageInterval: 30m
+      movingAverageWindow: 7
+      minVolume: 60_000
 
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 200_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 200_000
 
 - on: binance
   techsignal:
@@ -96,12 +94,12 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 40_000
-        # 40k ~ 90k
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 40_000
+      # 40k ~ 90k
 
 
 - on: binance
@@ -110,11 +108,11 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 15_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 15_000
 
 - on: binance
   techsignal:
@@ -122,11 +120,11 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 1_000_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 1_000_000
 
 - on: binance
   techsignal:
@@ -134,11 +132,11 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 10_000_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 10_000_000
 
 - on: binance
   techsignal:
@@ -146,11 +144,11 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 3_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 3_000
 
 - on: binance
   techsignal:
@@ -158,8 +156,20 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-      - interval: 5m
-        movingAverageType: EMA
-        movingAverageInterval: 1h
-        movingAverageWindow: 7
-        minVolume: 2_000_000
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 2_000_000
+      
+- on: binance
+  techsignal:
+    symbol: MATICUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 7
+      minVolume: 1_000_000      
