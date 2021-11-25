@@ -1,6 +1,7 @@
 ---
-telegram:
-  broadcast: true
+notifications:
+  telegram:
+    broadcast: true
 
 sessions:
   binance:
