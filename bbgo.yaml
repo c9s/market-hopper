@@ -33,7 +33,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 1000
 
 - on: binance
@@ -50,7 +50,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 30_000
 
 - on: binance
@@ -68,7 +68,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 8_000
 
 - on: binance
@@ -86,7 +86,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 200_000
 
 - on: binance
@@ -98,7 +98,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 40_000
       # 40k ~ 90k
 
@@ -112,7 +112,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 15_000
 
 - on: binance
@@ -124,7 +124,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 1_000_000
 
 - on: binance
@@ -136,7 +136,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 10_000_000
 
 - on: binance
@@ -148,7 +148,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 3_000
 
 - on: binance
@@ -160,7 +160,7 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 2_000_000
       
 - on: binance
@@ -172,5 +172,18 @@ exchangeStrategies:
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
-      movingAverageWindow: 7
+      movingAverageWindow: 99
       minVolume: 1_000_000      
+
+
+- on: binance
+  techsignal:
+    symbol: ATOMUSDT
+    fundingRate:
+      high: 0.04%
+    supportDetection:
+    - interval: 5m
+      movingAverageType: EMA
+      movingAverageInterval: 1h
+      movingAverageWindow: 99
+      minVolume: 50_000
