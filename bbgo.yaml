@@ -24,12 +24,6 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-    - interval: 1m
-      movingAverageType: EMA
-      movingAverageInterval: 1h
-      movingAverageWindow: 99
-      minVolume: 100
-
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
@@ -42,11 +36,6 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-    - interval: 1m
-      movingAverageType: EMA
-      movingAverageInterval: 1h
-      movingAverageWindow: 7
-      minVolume: 20_000
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
@@ -59,12 +48,6 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-    - interval: 1m
-      movingAverageType: EMA
-      movingAverageInterval: 30m
-      movingAverageWindow: 7
-      minVolume: 2_000
-
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
@@ -77,12 +60,6 @@ exchangeStrategies:
     fundingRate:
       high: 0.04%
     supportDetection:
-    - interval: 1m
-      movingAverageType: EMA
-      movingAverageInterval: 30m
-      movingAverageWindow: 7
-      minVolume: 60_000
-
     - interval: 5m
       movingAverageType: EMA
       movingAverageInterval: 1h
